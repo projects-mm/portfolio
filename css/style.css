@@ -14,9 +14,14 @@ body {
     overflow-x: hidden;
 }
 
-section {
+main {
     width: 100%;
     height: 100vh;
+    padding: 30px;
+}
+
+section {
+    width: 100%;
     padding: 30px;
     margin-top: 50px;
 }
@@ -80,7 +85,8 @@ hr {
 }
 
 .text {
-    padding: 50px;
+    margin-top: 30px;
+    padding: 20px;
     width: 100%;
     color: #FCFCFC;
     text-align: center;
@@ -100,6 +106,7 @@ hr {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 .nav .nav__ul {
@@ -351,8 +358,8 @@ hr {
     color: #FCFCFC;
     background-color: blueviolet;
     position: fixed;
-	bottom: 40px;
-	right: 40px;
+	bottom: 25px;
+	right: 25px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
