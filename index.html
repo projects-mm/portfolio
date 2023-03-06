@@ -21,6 +21,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -64,16 +67,37 @@
             </div>
         </div>
     </section>
+    
     <section id="about">
-        <div class="container">
+        <div data-aos="fade-right" class="container">
             <div class="section-title">
                 <h2>About us</h2>
                 <hr />
             </div>
+            <div data-aos="zoom-in" class="text">
+                <p>
+                    Somos una empresa de desarrollo de software ágil, enfocada en crear soluciones personalizadas de alta calidad 
+                    para empresas en todas las industrias. 
+                    Con un equipo de expertos en tecnología, ScriptsMind se especializa en el desarrollo de aplicaciones web,
+                    y sitios web. <br><br>
+                    
+                    Lo que diferencia a ScriptsMind de otras empresas de desarrollo de software es su enfoque ágil y colaborativo.
+                    Utilizamos un enfoque centrado en el usuario para asegurarse de que cada proyecto se adapte a las necesidades
+                    y objetivos específicos de cada cliente. 
+                    Además, nuestro equipo trabaja de cerca con los clientes para garantizar que el proceso de desarrollo sea transparente y
+                    eficiente. <br><br>
+
+                    En ScriptsMind, nos comprometemos a mantenernos al día con las últimas tecnologías y prácticas de desarrollo,
+                    lo que nos permite entregar soluciones de software de alta calidad en tiempo y forma. 
+                    Nuestro objetivo es ayudar a nuestros clientes a alcanzar el éxito empresarial y la satisfacción del cliente a 
+                    través de la tecnología.
+
+                </p>
+            </div>
         </div>
     </section>
     <section id="skills">
-        <div class="container">
+        <div data-aos="fade-left" class="container">
             <div class="section-title right">
                 <h2>Skills</h2>
                 <hr />
@@ -81,7 +105,7 @@
         </div>
     </section>
     <section id="portfolio">
-        <div class="container">
+        <div data-aos="fade-right" class="container">
             <div class="section-title">
                 <h2>Portfolio</h2>
                 <hr />
@@ -89,7 +113,7 @@
         </div>
     </section>
     <section id="contact">
-        <div class="container">
+        <div data-aos="fade-left" class="container">
             <div class="section-title right">
                 <h2>Contact</h2>
                 <hr class="right"/>
@@ -97,6 +121,11 @@
         </div>
     </section>
 
+    <div data-aos="fade-left" class="up">
+        <i class="fa-solid fa-arrow-up fa-xl"></i>
+    </div>
+
     <script type="module" src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

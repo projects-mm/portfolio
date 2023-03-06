@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: #252525;
+    overflow-x: hidden;
 }
 
 section {
@@ -76,6 +77,13 @@ hr {
     align-items: center;
     height: 50px;
     gap: 10px;
+}
+
+.text {
+    padding: 50px;
+    width: 100%;
+    color: #FCFCFC;
+    text-align: center;
 }
 
 /* 
@@ -331,6 +339,27 @@ hr {
     END MENU ICON
 --------------------
 */
+
+/*
+--------------------
+    UP
+--------------------
+*/
+
+.up {
+    height: 50px;
+    color: #FCFCFC;
+    background-color: blueviolet;
+    position: fixed;
+	bottom: 40px;
+	right: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    width: 50px;
+}
 
 
 
