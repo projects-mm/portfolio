@@ -45,9 +45,14 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    color: aliceblue;
+    font-weight: 500;
+}
+
 hr {
     width: 100px;
-    border-color: rgb(106, 0, 255);
+    border-color: rgb(101, 63, 155);
     position: relative;
     display: flex;
     z-index: 1;
@@ -64,6 +69,11 @@ hr {
     font-weight: 800;
     font-size: 1em;
     color: rgb(106, 0, 255);
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 300;
 }
 
 .container {
@@ -98,6 +108,44 @@ hr {
     color: #FCFCFC;
     text-align: center;
     font-size: 17px;
+}
+
+/* 
+
+    SCROLLBAR
+
+*/
+::-webkit-scrollbar {
+    width: 10px;  
+}
+
+::-webkit-scrollbar-track {
+    background: #606060;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 124, 124);
+}
+
+/* 
+
+    GALERY
+
+*/
+.galery {
+    display: grid;
+}
+
+/* 
+
+    CARD
+
+*/
+.card {
+    min-width: 50px;
+    max-width: 400px;
+    min-height: 50px;
+    max-height: 400px;
 }
 
 /* 
@@ -146,14 +194,14 @@ hr {
 
 .popup {
     display: inline;
-    background-color: rgb(217, 132, 251);
+    background-color: rgb(101, 63, 155);
     padding: 8px;
     border-radius: 20px 20px 20px 0px;
 }
 
 .popup span {
     font-size: 16px;
-    color: #3d3d3d;
+    color: #FCFCFC;
     font-weight: 500;
 }
 
