@@ -10,7 +10,7 @@ const Nav = () => {
     window.addEventListener('click', closeNavbar);
 
     // Change menu icon
-    nav.addEventListener('click', changeIcon);
+    nav.addEventListener('click touchstart', changeIcon);
 
 
     // Functions
