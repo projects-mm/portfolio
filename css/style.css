@@ -26,6 +26,13 @@ section {
     margin-top: 50px;
 }
 
+footer {
+    width: 100%;
+    height: 400px;
+    background:  rgb(101, 63, 155);
+    margin-top: 60px;
+}
+
 span {
     color: aliceblue;
     font-size: 25px;
@@ -90,6 +97,7 @@ hr {
     width: 100%;
     color: #FCFCFC;
     text-align: center;
+    font-size: 17px;
 }
 
 /* 
@@ -356,7 +364,7 @@ hr {
 .up {
     height: 50px;
     color: #FCFCFC;
-    background-color: blueviolet;
+    background-color: rgb(106, 0, 255);
     position: fixed;
 	bottom: 25px;
 	right: 25px;
@@ -366,6 +374,44 @@ hr {
     display: none;
     cursor: pointer;
     width: 50px;
+}
+
+/*
+--------------------
+    FORM
+--------------------
+*/
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    padding: 15px;
+    background: #2a2a2a;
+    color: #FCFCFC;
+    font-weight: 400;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    resize: none;
+    padding: 15px;
+    background: #2a2a2a;
+    color: #FCFCFC;
+    font-weight: 400;
+    border: none;
 }
 
 
@@ -385,5 +431,9 @@ hr {
 
     .nav {
         display: none;
+    }
+
+    .text {
+        text-align: justify;
     }
 }
