@@ -4,6 +4,7 @@ const cardDetails = document.querySelector('.card-details');
 
 export const CardHover = () => {
 
+
     //Event Listeners
 
     cards.forEach(card => {
@@ -19,13 +20,17 @@ export const CardHover = () => {
             card.childNodes[3].classList.add('active');
         })
 
-        card.addEventListener('touchend', () => {
-            card.childNodes[3].classList.remove('active');
-        })
+        window.addEventListener('touchstart', (e) => {
+            if (card.contains(e.target)) {
+                return;
+            } else {
+                cardDetails.classList.remove('active')
+            }
+        });
     })
     
 
-    //Functions 
+    //Functions
     function showDetails(e) {
         cardDetails.classList.add('active')
     }
