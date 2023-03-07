@@ -270,7 +270,7 @@ button {
     padding: 5px;
     font-size: 15px;
     background-color: #252525;
-    border: #653f9b 1px solid;
+    border: #653f9b 3px solid;
     color: #FCFCFC;
     border-radius: 5px;
     cursor: pointer;
@@ -401,9 +401,9 @@ button {
     transform: scaleY(1);
 }
 
-.active {
+/* .active {
     transform: scaleY(1);
-}
+} */
 
 /*
 --------------------
