@@ -1,6 +1,7 @@
 const nav = document.querySelector('.nav-menu');
 const navCheck = document.querySelector('#nav-check');
 
+
 const Nav = () => {
 
     //Eventlistener
@@ -18,10 +19,13 @@ const Nav = () => {
 
     function closeNavbar(e) {
         if (navCheck.checked) {
-            if (e.target.nodeName === 'LI' || e.target.nodeName === 'NAV' || e.target.nodeName === 'A' || e.target.id === 'nav-check') {
+            console.log(e);
+            if (e.target.nodeName === 'LI' || e.target.nodeName === 'NAV' || e.target.nodeName === 'A' || e.target.id === 'nav-check' || e.target.nodeName === 'INPUT' || e.target.className === 'nav-menu') {
                 return;
             } else {
-                navCheck.checked = false;
+                
+               navCheck.checked = false;
+               nav.classList.remove('active');
             }
         }
     }
