@@ -1,5 +1,6 @@
 const nav = document.querySelector('.nav-menu');
 const navCheck = document.querySelector('#nav-check');
+const navResponsive = document.querySelector('.navbar-responsive')
 
 
 const Nav = () => {
@@ -18,23 +19,12 @@ const Nav = () => {
     }
 
     function closeNavbar(e) {
-        if (navCheck.checked) {
-            console.log(e);
-            if (    
-                e.target.nodeName === 'LI' 
-                || e.target.nodeName === 'NAV' 
-                || e.target.nodeName === 'A' 
-                || e.target.id === 'nav-check' 
-                || e.target.nodeName === 'INPUT' 
-                || e.target.className === 'nav-menu' 
-                || e.target.className === 'menu-icon'
-                ) {
-                return;
-            } else {
-                
-               navCheck.checked = false;
-               nav.classList.remove('active');
-            }
+
+        if(navResponsive.contains(e.target)) {
+            return;
+        } else {
+            navCheck.checked = false;
+            nav.classList.remove('active');
         }
     }
 
