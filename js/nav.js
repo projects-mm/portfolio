@@ -7,7 +7,8 @@ const Nav = () => {
 
     //Eventlistener
     // Close navbar when click event is out of nav element
-    window.addEventListener('click touchstart', closeNavbar);
+    window.addEventListener('click', closeNavbar);
+    window.addEventListener('touchstart', closeNavbar);
 
     // Change menu icon
     nav.addEventListener('click', changeIcon);
