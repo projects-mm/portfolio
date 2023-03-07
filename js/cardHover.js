@@ -24,7 +24,7 @@ export const CardHover = () => {
             if (card.contains(e.target)) {
                 return;
             } else {
-                cardDetails.classList.remove('active')
+                card.childNodes[3].classList.remove('active');
             }
         });
     })
