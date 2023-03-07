@@ -2,6 +2,7 @@ const up = document.querySelector('.up');
 
 
 export const Up = () => {
+    
     window.onscroll = function() {
         let y = window.scrollY;
         if (y > 200) {
