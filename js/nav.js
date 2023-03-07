@@ -20,7 +20,15 @@ const Nav = () => {
     function closeNavbar(e) {
         if (navCheck.checked) {
             console.log(e);
-            if (e.target.nodeName === 'LI' || e.target.nodeName === 'NAV' || e.target.nodeName === 'A' || e.target.id === 'nav-check' || e.target.nodeName === 'INPUT' || e.target.className === 'nav-menu') {
+            if (    
+                e.target.nodeName === 'LI' 
+                || e.target.nodeName === 'NAV' 
+                || e.target.nodeName === 'A' 
+                || e.target.id === 'nav-check' 
+                || e.target.nodeName === 'INPUT' 
+                || e.target.className === 'nav-menu' 
+                || e.target.className === 'menu-icon'
+                ) {
                 return;
             } else {
                 
