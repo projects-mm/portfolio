@@ -7,6 +7,8 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -482,18 +484,19 @@ button {
 */
 
 .up {
-    height: 50px;
-    color: #FCFCFC;
+    align-items: center;
     background-color: rgb(106, 0, 255);
-    position: fixed;
+    border-radius: 50%;
     bottom: 25px;
     right: 25px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    display: none;
+    color: #FCFCFC;
     cursor: pointer;
+    display: none;
+    height: 50px;
+    justify-content: center;
+    position: fixed;
     width: 50px;
+    
 }
 
 /*
