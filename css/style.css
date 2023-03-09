@@ -246,6 +246,7 @@ hr {
 */
 
 .nav {
+    background: rgba(37, 37, 37, .9);
     width: 100%;
     height: 60px;
     display: flex;
