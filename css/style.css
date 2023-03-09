@@ -112,6 +112,35 @@ hr {
     font-size: 20px;
 }
 
+.services-info {
+    margin-top: 50px;
+    color: #FCFCFC;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.services-info i {
+    font-size: 50px;
+    color: #FCFCFC;
+}
+
+.services-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.seo-icon {
+    font-size: 50px;
+    font-weight: 500;
+}
+
 /* 
 
     SCROLLBAR
@@ -175,7 +204,7 @@ hr {
 }
 
 .card:hover img {
-    filter: blur(4px) opacity(40%);
+    filter: blur(10px) opacity(10%);
     transition: filter .4s;
 }
 
@@ -194,6 +223,10 @@ hr {
     padding: 20px;
     color: #FCFCFC;
     gap: 30px;
+}
+
+.card-details h2 {
+    text-align: center;
 }
 
 .card-details.active {
@@ -389,7 +422,7 @@ button {
 }
 
 .nav-links li a {
-    padding: 20px;
+    padding: 20px; 
     text-decoration: none;
     color: #fff;
     font-weight: 200;
